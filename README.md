@@ -1,0 +1,25 @@
+# GitHub Dark Inspired Theme
+
+A clean, polished dark theme for VS Code inspired by the original GitHub dark theme, but refined for daily coding.
+
+## Install
+
+1. Open the **Extensions** view in VS Code (`Ctrl+Shift+X`).
+2. Search for `GitHub Dark Inspired`.
+3. Click **Install**.
+4. Go to **File > Preferences > Theme > Color Theme** and select `GitHub Dark Inspired`.
+
+## Customization
+
+You can further customize this theme in your VS Code `settings.json`:
+
+```json
+"workbench.colorCustomizations": {
+    "editor.background": "#0d1117",
+    "activityBar.background": "#010409"
+}
+```
+
+## License
+
+MIT License - see [LICENSE.txt](LICENSE.txt) for details.

@@ -1,0 +1,59 @@
+{
+    "name": "github-dark-inspired-theme",
+    "displayName": "GitHub Dark Inspired",
+    "description": "GitHub Dark Inspired theme for VS Code",
+    "version": "0.1.0",
+    "publisher": "igolskyi",
+    "license": "MIT",
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#1b1f23",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/igolskyi/github-dark-inspired-theme"
+    },
+    "bugs": {
+        "url": "https://github.com/igolskyi/github-dark-inspired-theme/issues"
+    },
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "theme",
+        "github",
+        "dark"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "GitHub Dark Inspired",
+                "uiTheme": "vs-dark",
+                "path": "./themes/dark-default.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@changesets/changelog-github": "^0.4.1",
+        "@changesets/cli": "^2.17.0",
+        "@primer/primitives": "7.10.0",
+        "chroma-js": "^2.1.2",
+        "color": "^3.1.2",
+        "nodemon": "^2.0.3",
+        "vsce": "^1.100.1"
+    },
+    "scripts": {
+        "start": "nodemon --watch src src/index.js",
+        "build": "node src/index.js && mkdir -p build",
+        "package": "vsce package -o ./build/github-dark-inspired-theme.vsix",
+        "prepublishOnly": "npm run build && vsce publish",
+        "release": "changeset publish"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
