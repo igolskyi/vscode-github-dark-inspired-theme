@@ -9,6 +9,27 @@ A clean, polished dark theme for VS Code inspired by the original GitHub dark th
 3. Click **Install**.
 4. Go to **File > Preferences > Theme > Color Theme** and select `GitHub Dark Inspired`.
 
+## Screenshots
+
+### Angular
+
+![Angular HTML](sreenshots/angular.html.png)
+![Angular TS](sreenshots/angular.ts.png)
+
+### React
+
+![React](sreenshots/react.png)
+
+### NestJS
+
+![NestJS](sreenshots/nestjs.png)
+
+### HTML & CSS
+
+![HTML](sreenshots/html.png)
+![CSS](sreenshots/css.png)
+
+
 ## Customization
 
 You can further customize this theme in your VS Code `settings.json`:
@@ -23,3 +44,8 @@ You can further customize this theme in your VS Code `settings.json`:
 ## License
 
 MIT License - see [LICENSE.txt](LICENSE.txt) for details.
+
+## Changelog
+
+See [CHANGELOG.md]()
+
