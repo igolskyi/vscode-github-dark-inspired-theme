@@ -2,8 +2,8 @@
     "name": "vscode-github-dark-inspired-theme",
     "displayName": "GitHub Dark Inspired",
     "description": "GitHub Dark Inspired theme for VS Code",
-    "version": "0.3.0",
-    "publisher": "igolskyi",
+    "version": "1.0.0",
+    "publisher": "igolskyi-vsc",
     "license": "MIT",
     "icon": "icon.png",
     "galleryBanner": {
@@ -45,7 +45,7 @@
         "color": "^3.1.2",
         "nodemon": "^2.0.3",
         "prettier": "^3.8.1",
-        "vsce": "^1.100.1"
+        "vsce": "^2.15.0"
     },
     "scripts": {
         "start": "nodemon --watch src src/index.js",
