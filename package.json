@@ -44,11 +44,13 @@
         "chroma-js": "^2.1.2",
         "color": "^3.1.2",
         "nodemon": "^2.0.3",
+        "prettier": "^3.8.1",
         "vsce": "^1.100.1"
     },
     "scripts": {
         "start": "nodemon --watch src src/index.js",
         "build": "node src/index.js && mkdir -p build",
+        "format": "prettier --write \"src/**/*.js\"",
         "package": "vsce package -o ./build/github-dark-inspired-theme.vsix",
         "prepublishOnly": "npm run build && vsce publish",
         "release": "changeset publish"

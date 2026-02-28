@@ -1,15 +1,19 @@
-const fs = require("fs").promises;
-const getTheme = require("./theme");
+const fs = require('fs').promises
+const getTheme = require('./theme')
 
 const darkDefaultTheme = getTheme({
-  theme: "dark",
-  name: "GitHub Dark Default",
-});
+    name: 'GitHub Dark Default',
+})
 
 // Write themes
 
-fs.mkdir("./themes", { recursive: true })
-  .then(() => Promise.all([
-    fs.writeFile("./themes/dark-default.json", JSON.stringify(darkDefaultTheme, null, 2)),
-  ]))
-  .catch(() => process.exit(1))
+fs.mkdir('./themes', { recursive: true })
+    .then(() =>
+        Promise.all([
+            fs.writeFile(
+                './themes/dark-default.json',
+                JSON.stringify(darkDefaultTheme, null, 2),
+            ),
+        ]),
+    )
+    .catch(() => process.exit(1))
