@@ -2,6 +2,8 @@
 
 A clean, polished dark theme for VS Code inspired by the original GitHub dark theme, but refined for daily coding.
 
+The Theme extension is available in [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=igolskyi-vsc.vscode-github-dark-inspired-theme) and [Open VSX Registry](https://open-vsx.org/extension/igolskyi/vscode-github-dark-inspired-theme)
+
 ## Install
 
 1. Open the **Extensions** view in VS Code (`Ctrl+Shift+X`).
